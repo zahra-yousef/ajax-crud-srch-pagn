@@ -174,17 +174,17 @@
         //#6. Search
         $(document).on('keyup', function (e) {
             e.preventDefault();
-            let search_string = $('#search').val();
+            var search_string = $('#search').val();
             console.log(search_string);
             $.ajax({
                 type: "GET",
                 url: "{{ route('search.product') }}",
-                data: {serach_string:search_string},
+                data: {'serach_string':search_string},
                 success: function (res) {
-                    console.log(res);
                     $('.table-data').html(res);
+                    
                     if(res.status == 'nothing_found'){
-                        $('.table-data').html('<span class="text-danger">'+'nothing found'+'</span>');
+                        $('.table-data').html('<span class="text-danger">'+'Nothing Found'+'</span>');
                     }
                 }
             });

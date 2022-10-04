@@ -23,7 +23,7 @@
                 <div class="col-md-8">
                     <h2 class="my-5 text-center">Laravel 9 Ajax CRUD</h2>
                     <a href="" 
-                        class="btn btn-success my-3 float-end" 
+                        class="btn btn-primary my-3 float-end" 
                         data-bs-toggle="modal" 
                         data-bs-target="#addModal">
                         Add Product<i class="las la-plus"></i>
